@@ -1,15 +1,19 @@
-package com.app.example.nosql;
+package com.app;
+
+import java.util.UUID;
+
+import com.jk.util.JKObjectUtil;
 
 public class Account {
-	int id;
+	String id = UUID.randomUUID().toString();
 	String name;
 	double balance;
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -27,6 +31,11 @@ public class Account {
 
 	public void setBalance(double balance) {
 		this.balance = balance;
+	}
+
+	@Override
+	public String toString() {
+		return JKObjectUtil.toString(this, false);
 	}
 
 }

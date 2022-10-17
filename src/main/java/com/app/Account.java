@@ -2,7 +2,7 @@ package com.app;
 
 import java.util.UUID;
 
-import com.jk.util.JKObjectUtil;
+import com.jk.core.util.JKObjectUtil;
 
 public class Account {
 	String id = UUID.randomUUID().toString();

@@ -2,10 +2,9 @@ package com.app;
 
 import java.util.List;
 
-import com.jk.db.dataaccess.nosql.JKNoSqlDataAccess;
-import com.jk.db.dataaccess.orm.JKObjectDataAccess;
-import com.jk.db.datasource.JKDataAccessFactory;
-import com.jk.util.JK;
+import com.jk.core.util.JK;
+import com.jk.data.dataaccess.JKDataAccessFactory;
+import com.jk.data.dataaccess.nosql.JKNoSqlDataAccess;
 
 public class App {
 	private static String id;

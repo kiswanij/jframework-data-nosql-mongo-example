@@ -2,9 +2,10 @@ package com.app;
 
 import java.util.UUID;
 
+import com.jk.core.jpa.JKBaseModel;
 import com.jk.core.util.JKObjectUtil;
 
-public class Account {
+public class Account extends JKBaseModel{
 	String id = UUID.randomUUID().toString();
 	String name;
 	double balance;

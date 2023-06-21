@@ -21,12 +21,12 @@ public class App {
 
 	private static void insert(JKNoSqlDataAccess dataAccess) {
 		Account account = new Account();
-		account.setName("Jalal");
+		account.setName("Jalal4");
 		account.setBalance(100);
-
+		JK.printBlock(account.getUid());
 		// insert the object in the database using JPA/Hibernate implementation
 		dataAccess.insert(account);
-		id = account.getId();
+		id = account.getUid();
 	}
 
 	private static void getAll(JKNoSqlDataAccess dataAccess) {
@@ -40,6 +40,7 @@ public class App {
 	private static Account find(JKNoSqlDataAccess dataAccess) {
 		// Find an object from database using JPA
 		Account std = dataAccess.find(Account.class, id);
+		JK.printBlock(std);
 		return std;
 	}
 

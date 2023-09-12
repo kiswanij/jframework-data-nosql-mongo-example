@@ -1,8 +1,8 @@
-# JKFramework Microservice Client Example
+# JFramework Microservice Client Example
 _Last updated: 2022-11-26_
 
 
-This repository contains a _JKFramework-ServiceClient_ example which calls a backend microservice. 
+This repository contains a _JFramework-ServiceClient_ example which calls a backend microservice. 
 
 ## Prerequisites:
 - JDK 17+ Installed
